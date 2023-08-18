@@ -1,0 +1,21 @@
+package com.anamika.demo;
+
+import com.anamika.exception.NegativeNoNotAllowedException;
+
+public class MyDivide {
+	
+	/*
+	 * we need to divide two positive no's
+	 * if any one of the no is negative, our system should throw NegativeNoNotAllowedException
+	 */
+	
+	public int divide(int number1,int number2){
+		if(number1>=0 && number2>=0) {
+			return number1/number2;	
+		}
+		else {
+			throw new NegativeNoNotAllowedException("Please enter a positive no'");
+		}
+	}
+
+}
